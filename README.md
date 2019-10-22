@@ -1,6 +1,6 @@
-# canvasBuilder
+# Vue Nuxt Boilerplate
 
-> Canvas Builder
+> Vue Nuxt Boilerplate
 
 ## Build Setup
 
