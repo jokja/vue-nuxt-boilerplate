@@ -1,0 +1,36 @@
+.theme--light.application {
+    background-color: #F4F7FA !important;
+    color: #464D69 !important;
+}
+.spinner {
+	margin: 0 auto;
+	// width: 40px;
+	// height: 40px;
+	position: relative;
+	top: 50%;
+}
+.blue-dark-mv {
+    background-color: #252852 !important;
+}
+
+/*** chartjs ***/
+.overlay-content {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    right: 0;
+	// bottom: 0;
+}
+.pos-relative {
+    position: relative;
+}
+
+.cus-chart {
+    position: relative;
+}
+.cus-chart__left-label {
+    position: absolute;
+    left: -13px;
+    top: 63px;
+    font-size: 12px;
+}

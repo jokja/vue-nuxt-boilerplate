@@ -19,5 +19,11 @@ module.exports = {
   ],
   // add your custom rules here
   rules: {
+    "no-console": "off",
+    "eqeqeq": "off",
+    "no-unexpected-multiline": "off",
+    "no-param-reassign": "off",
+    "import/no-extraneous-dependencies": "off",
+    "prettier/prettier": "error"
   }
 }

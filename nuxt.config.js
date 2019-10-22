@@ -1,5 +1,9 @@
 import colors from 'vuetify/es5/util/colors'
 
+require("dotenv").config()
+const API_URL =
+  process.env.NODE_ENV === "production" ? process.env.API_URL_PROD : process.env.API_URL_DEV
+
 export default {
   mode: 'spa',
   /*
@@ -22,15 +26,18 @@ export default {
   /*
    ** Customize the progress-bar color
    */
-  loading: { color: '#fff' },
+  loading: { color: '#4287f5', height: '3px' },
   /*
    ** Global CSS
    */
-  css: [],
+  css: ['~/assets/main.scss', 'animate.css/animate.min.css'],
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [],
+  plugins: [
+    "~/plugins/components",
+    { src: '~/plugins/localStorage.js', ssr: false }
+  ],
   /*
    ** Nuxt.js dev-modules
    */
@@ -45,13 +52,16 @@ export default {
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
-    '@nuxtjs/pwa'
+    '@nuxtjs/pwa',
+    '@nuxtjs/dotenv'
   ],
   /*
    ** Axios module configuration
    ** See https://axios.nuxtjs.org/options
    */
-  axios: {},
+  axios: {
+    baseURL: API_URL
+  },
   /*
    ** vuetify module configuration
    ** https://github.com/nuxt-community/vuetify-module
@@ -59,7 +69,7 @@ export default {
   vuetify: {
     customVariables: ['~/assets/variables.scss'],
     theme: {
-      dark: true,
+      dark: false,
       themes: {
         dark: {
           primary: colors.blue.darken2,
