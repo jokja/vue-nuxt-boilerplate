@@ -1,7 +1,7 @@
 {
-  "name": "canvasbuilder",
+  "name": "vuenuxtboilerplate",
   "version": "1.0.0",
-  "description": "Canvas Builder",
+  "description": "Vue Nuxt Boilerplate",
   "author": "jokja",
   "private": true,
   "scripts": {
