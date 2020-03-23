@@ -100,58 +100,16 @@ export default {
 			miniVariant: false,
 			items: [
 				{
-					icon: 'mdi-home',
+					icon: 'home',
 					title: 'Home',
 					active: true,
 					to: '/'
 				},
 				{
-					icon: 'mdi-checkbox-multiple-blank',
-					title: 'Planning',
-					items: [
-						{
-							title: 'Production',
-							active: false,
-							to: '/planning/production'
-						},
-						{
-							title: 'Downtime',
-							active: false,
-							to: '/planning/downtime'
-						}
-					]
-				},
-				{
-					icon: 'mdi-checkbox-multiple-blank',
-					title: 'Production',
-					items: [
-						{ title: 'Line', active: false, to: '/line/view' },
-						{
-							title: 'Machine',
-							active: false,
-							to: '/machine/list'
-						}
-					]
-				},
-				{
-					icon: 'mdi-settings',
-					title: 'Machine Settings',
-					to: '/machine-setting'
-				},
-				{
-					icon: 'mdi-account',
-					title: 'Operator',
-					to: '/operator'
-				},
-				{
-					icon: 'mdi-google-analytics',
-					title: 'Analysis',
-					to: '/analysis'
-				},
-				{
-					icon: 'mdi-file-document',
-					title: 'Report',
-					to: '/report'
+					icon: 'settings_input_hdmi',
+					title: 'Sensor',
+					active: false,
+					to: '/sensor'
 				}
 			]
 		}
