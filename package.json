@@ -17,7 +17,7 @@
     "animate.css": "^3.7.2",
     "js-cookie": "^2.2.1",
     "material-color-hash": "^0.1.6",
-    "nuxt": "^2.0.0",
+    "nuxt": "^2.15.8",
     "nuxt-material-design-icons": "^1.0.4",
     "vee-validate": "^2.2.15",
     "velocity-animate": "^1.5.2",
